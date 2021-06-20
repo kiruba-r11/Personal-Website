@@ -104,13 +104,25 @@
 	margin-left: 20px;
 }
 
+.skill-text-1 {
+	margin-left: 27px;
+}
+
+.skill-text-2 {
+	margin-left: 19px;
+}
+
+.skill-text-3 {
+	margin-left: 22.5px;
+}
+
 .skill-text-dark {
 	color: white;
 }
 
 .skill-box {
 	border-bottom: 3px solid #007BFF;
-	margin: 15px 0;
+	margin: 0 0 15px;
 	padding: 18px 20px;
 	display: flex;
 	align-items: center;

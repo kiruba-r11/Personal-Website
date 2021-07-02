@@ -2,8 +2,22 @@
 	font-family: 'Poppins';
 }
 
+:root {
+	--light-primary: #007BFF;
+	--dark-primary:  #1CA0F2;
+	--light-text-nav: #CCE5FF;
+	--dark-text-nav: #DBECFF;
+	--light-shadow: #F2F2F2;
+	--dark-shadow: #252A41;
+	--dark-primary-text: #fff;
+	--dark-secondary: #8B97C6;
+	--dark-card-hover: #1f212e;
+	--light-card-hover: #d9d9d9;
+	--dark-bg: #1E202A;
+}
+
 .dark-theme {
-	background-color: #1E202A;
+	background-color: var(--dark-bg);
 }
 
 /* Navbar */
@@ -13,27 +27,27 @@
 }
 
 .nav-bg-color-light {
-	background-color: #007BFF !important;
+	background-color: var(--light-primary) !important;
 }
 
 .nav-bg-color-dark { 
-	background-color: #1CA0F2 !important;
+	background-color: var(--dark-primary) !important;
 }
 
 .nav-text-color-light {
-	color: #CCE5FF !important;
+	color: var(--light-text-nav) !important;
 }
 
 .nav-text-color-dark {
-	color: #DBECFF !important;
+	color: var(--dark-text-nav) !important;
 }
 
 .nav-text-color-light:hover {
-	color:  white !important;
+	color:  var(--dark-primary-text) !important;
 }
 
 .nav-active {
-	color: white !important;
+	color: var(--dark-primary-text) !important;
 	font-weight: 600;
 }
 
@@ -63,13 +77,13 @@
 .test {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: #007BFF;
+	background-color: var(--light-primary);
 	height: 300px;
 	border-radius: 50%;
 }
 
 .test-dark {
-	background-color: #1CA0F2;
+	background-color: var(--dark-primary);
 }
 
 .heading-text-light {
@@ -78,7 +92,7 @@
 }
 
 .heading-text-dark {
-	color: white !important;
+	color: var(--dark-primary-text) !important;
 }
 
 .text-shadow-light {
@@ -86,7 +100,7 @@
 	letter-spacing: 3px;
 	font-weight: 700;
 	font-size: 4rem;
-	color:  #F2F2F2;
+	color:  var(--light-shadow);
 	position: relative;
 	top: -50px;
 	left: 10px;
@@ -94,7 +108,7 @@
 }
 
 .text-shadow-dark {
-	color: #252A41;
+	color: var(--dark-shadow);
 }
 
 .skill-text {
@@ -117,11 +131,11 @@
 }
 
 .skill-text-dark {
-	color: white;
+	color: var(--dark-primary-text);
 }
 
 .skill-box {
-	border-bottom: 3px solid #007BFF;
+	border-bottom: 3px solid var(--light-primary);
 	margin: 0 0 15px;
 	padding: 18px 20px;
 	display: flex;
@@ -130,24 +144,24 @@
 }
 
 .skill-box-light {
-	background-color: #F2F2F2;
+	background-color: var(--light-shadow);
 	transition: 0.5s;
 }
 
 .skill-box-dark {
-	border-bottom: 3px solid #1CA0F2;
-	background-color: #252A41;
+	border-bottom: 3px solid var(--dark-primary);
+	background-color: var(--dark-shadow);
 	transition: 0.5s;
 }
 
 .skill-box-dark-hover {
-	background-color: #1f212e;
+	background-color: var(--dark-card-hover);
 	transition: 1s;
 }
 
 .skill-box-light:hover {
 	transition: 1s;
-	background-color: #d9d9d9;
+	background-color: var(--light-card-hover);
 }
 
 .skill-logo {
@@ -172,7 +186,7 @@
 }
 
 .intro-text-dark {
-	color: white;
+	color: var(--dark-primary-text);
 }
 
 #intro-desc {
@@ -181,7 +195,7 @@
 }
 
 .intro-desc-dark {
-	color: #8B97C6;
+	color: var(--dark-secondary);
 }
 
 #education img {
@@ -190,15 +204,15 @@
 }
 
 .card-dark {
-	background-color: #252A41;
+	background-color: var(--dark-shadow);
 }
 
 .score , .card-text-dark {
-	color: #8B97C6;
+	color: var(--dark-secondary);
 }
 
 .card-title-dark {
-	color: white;
+	color: var(--dark-primary-text);
 }
 
 #education {

@@ -29,6 +29,8 @@ switchButton.addEventListener("click" , function(event) {
 function applyDarkMode() {
 
 	navbarBG.classList.add("nav-bg-color-dark");
+	navbarBG.classList.add("navbar-light");
+	navbarBG.classList.remove("navbar-dark");
 	navbarText.classList.add("nav-text-color-dark");
 
 	for(var i = 0; i < cardTitle.length; i++) {
@@ -64,12 +66,6 @@ function applyDarkMode() {
 	for(var i = 0; i < skillsContainer.length; i++) {
 		skillsContainer[i].classList.add("skill-box-dark");
 		skillsContainer[i].classList.remove("skill-box-light");
-		skillsContainer[i].addEventListener("mouseenter" , function() {
-			this.classList.add("skill-box-dark-hover");
-		});
-		skillsContainer[i].addEventListener("mouseleave" , function() {
-			this.classList.remove("skill-box-dark-hover");
-		});
 	}
 
 
@@ -77,6 +73,8 @@ function applyDarkMode() {
 
 function removeDarkMode() {
 	navbarBG.classList.remove("nav-bg-color-dark");
+	navbarBG.classList.add("navbar-dark");
+	navbarBG.classList.remove("navbar-light");
 	navbarText.classList.remove("nav-text-color-dark");
 
 	for(var i = 0; i < cardTitle.length; i++) {

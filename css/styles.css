@@ -3,16 +3,20 @@
 }
 
 :root {
+
+	/* Light Mode Colors */
 	--light-primary: #007BFF;
-	--dark-primary:  #1CA0F2;
 	--light-text-nav: #CCE5FF;
-	--dark-text-nav: #DBECFF;
 	--light-shadow: #F2F2F2;
+	--light-card-hover: #d9d9d9;
+
+	/* Dark Mode Colors */
+	--dark-primary:  #1CA0F2;
+	--dark-text-nav: #DBECFF;
 	--dark-shadow: #252A41;
 	--dark-primary-text: #fff;
 	--dark-secondary: #8B97C6;
 	--dark-card-hover: #1f212e;
-	--light-card-hover: #d9d9d9;
 	--dark-bg: #1E202A;
 }
 
@@ -95,6 +99,47 @@
 	color: var(--dark-primary-text) !important;
 }
 
+#intro-text {
+	line-height: 2;
+	font-size: 3rem;
+}
+
+.intro-text-dark {
+	color: var(--dark-primary-text);
+}
+
+#intro-desc {
+	font-size: 1.1rem;
+	width: 75%;
+}
+
+.intro-desc-dark {
+	color: var(--dark-secondary);
+}
+
+/* Education Section */
+
+#education img {
+	width: 100%;
+	height: 150px;
+}
+
+.card-dark {
+	background-color: var(--dark-shadow);
+}
+
+.score , .card-text-dark {
+	color: var(--dark-secondary);
+}
+
+.card-title-dark {
+	color: var(--dark-primary-text);
+}
+
+#education {
+	margin-bottom: 100px;
+}
+
 .text-shadow-light {
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -110,6 +155,8 @@
 .text-shadow-dark {
 	color: var(--dark-shadow);
 }
+
+/* Skills Section */
 
 .skill-text {
 	margin: 0;
@@ -154,7 +201,7 @@
 	transition: 0.5s;
 }
 
-.skill-box-dark-hover {
+.skill-box-dark:hover {
 	background-color: var(--dark-card-hover);
 	transition: 1s;
 }
@@ -180,44 +227,6 @@
 	width: 22.5px;
 }
 
-#intro-text {
-	line-height: 2;
-	font-size: 3rem;
-}
-
-.intro-text-dark {
-	color: var(--dark-primary-text);
-}
-
-#intro-desc {
-	font-size: 1.1rem;
-	width: 75%;
-}
-
-.intro-desc-dark {
-	color: var(--dark-secondary);
-}
-
-#education img {
-	width: 100%;
-	height: 150px;
-}
-
-.card-dark {
-	background-color: var(--dark-shadow);
-}
-
-.score , .card-text-dark {
-	color: var(--dark-secondary);
-}
-
-.card-title-dark {
-	color: var(--dark-primary-text);
-}
-
-#education {
-	margin-bottom: 100px;
-}
 
 @media (max-width: 1199px) {
 	#intro-text {
@@ -226,12 +235,6 @@
 }
 
 @media (max-width: 991px) {
-	#education img {
-		width: 90%;
-	}
-	#about-content .row {
-		flex-direction: column-reverse;
-	}
 	.introduction {
 		margin-top: 40px;
 		margin-bottom: 40px;
@@ -240,18 +243,34 @@
 	#intro-desc {
 		text-align: center;
 	}
+	#about-content .row {
+		flex-direction: column-reverse;
+	}
+	#education img {
+		width: 90%;
+	}
 }
 
 @media (max-width:  768px) {
-	#education img {
-		width: 100%;
-	}
 	#intro-text {
 		font-size: 2.5rem;
+	}
+	#education img {
+		width: 100%;
 	}
 }
 
 @media (max-width:  576px) {
+	#intro-text {
+		font-size: 1.8rem;
+	}
+	.heading-text-light {
+		margin-bottom: 40px;
+		font-size: 2.5rem;
+	}
+	.text-shadow-light {
+		display: none;
+	}
 	#education {
 		margin-bottom: 50px;
 	}
@@ -259,26 +278,16 @@
 		width: 100%;
 		height: 100%;
 	}
+	#education .container {
+		width: 80vw;
+	}
 	#skills .container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	#education .container {
-		width: 80vw;
-	}
 	#skills .row {
 		width: 80vw;
-	}
-	.text-shadow-light {
-		display: none;
-	}
-	.heading-text-light {
-		margin-bottom: 40px;
-		font-size: 2.5rem;
-	}
-	#intro-text {
-		font-size: 1.8rem;
 	}
 }
 
@@ -286,10 +295,10 @@
 	#intro-text {
 		font-size: 2rem;
 	}
-	#skills .row {
+	#education .container {
 		width: 90vw;
 	}
-	#education .container {
+	#skills .row {
 		width: 90vw;
 	}
 }
@@ -297,12 +306,6 @@
 @media (max-width:  400px) {
 	#intro-desc {
 		width: 90%;
-	}
-	#skills .row {
-		width: 95vw;
-	}
-	#education .container {
-		width: 95vw;
 	}
 	#intro-text {
 		font-size: 1.5rem;
@@ -312,5 +315,11 @@
 	}
 	.heading-text-light {
 		font-size: 2rem;
+	}
+	#education .container {
+		width: 95vw;
+	}
+	#skills .row {
+		width: 95vw;
 	}
 }

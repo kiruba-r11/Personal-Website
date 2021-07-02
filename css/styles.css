@@ -26,6 +26,13 @@
 
 /* Navbar */
 
+.navbar {
+	width: 100%;
+	z-index: 2;
+	position: fixed;
+	top: 0;
+}
+
 .navbar-brand {
 	cursor: pointer;
 }
@@ -55,15 +62,15 @@
 	font-weight: 600;
 }
 
-/* Toggle Switch */
+/* Toggle Mode */
 
-#toggle-switch {
-	display: flex;
-	justify-content: flex-end;
+.toggle {
+	margin-top: 80px;
+	font-size: 25px;
 }
 
-.form-check {
-	font-size: 25px;
+.toggle:hover {
+	cursor: pointer;
 }
 
 /* About Content */
@@ -136,10 +143,6 @@
 	color: var(--dark-primary-text);
 }
 
-#education {
-	margin-bottom: 100px;
-}
-
 .text-shadow-light {
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -154,6 +157,10 @@
 
 .text-shadow-dark {
 	color: var(--dark-shadow);
+}
+
+.mt-5 {
+	margin-top: 100px !important;
 }
 
 /* Skills Section */
@@ -235,6 +242,9 @@
 }
 
 @media (max-width: 991px) {
+	.toggle {
+		margin-bottom: 30px;
+	}
 	.introduction {
 		margin-top: 40px;
 		margin-bottom: 40px;
@@ -270,9 +280,6 @@
 	}
 	.text-shadow-light {
 		display: none;
-	}
-	#education {
-		margin-bottom: 50px;
 	}
 	#education img {
 		width: 100%;

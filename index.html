@@ -1,265 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kirubanand R</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirubanand R</title>
 
-	<!-- Favicon -->
-	<link rel="icon" href="assets/favicons/favicon.ico">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicons/favicon.ico" />
 
-	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-	<!-- Bootstrap Scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
-	<!-- AOS -->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="light-theme">
+      <!-- About Section -->
+      <section id="about">
+        <!-- NavBar -->
+        <nav
+          class="
+            navbar navbar-expand-lg
+            bg-light
+            navbar-dark
+            nav-bg-color-light
+          "
+        >
+          <div class="container">
+            <a class="navbar-brand nav-text-color-light">Resume</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#nav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-</head>
-<body>
+            <div class="navbar-collapse collapse" id="nav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#" class="mx-2 nav-link nav-text-color-light"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#education"
+                    class="mx-2 nav-link nav-text-color-light"
+                    >Education</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#skills" class="mx-2 nav-link nav-text-color-light"
+                    >Skills</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="mx-2 nav-link nav-text-color-light"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="ms-2 nav-link nav-text-color-light"
+                    >Connect</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-	<!-- About Section -->
-	<section id="about">
+        <!-- Dark Mode Toggle Switch -->
+        <div
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+          class="container toggle"
+        >
+          <svg
+            style="
+              fill: #fff;
+              background-color: #000;
+              border-radius: 50%;
+              padding: 10px;
+              box-sizing: content-box;
+            "
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-moon-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+            />
+          </svg>
+        </div>
 
-		<!-- NavBar -->
-		<nav class="navbar navbar-expand-lg bg-light navbar-dark nav-bg-color-light">
+        <div class="container" id="about-content">
+          <div class="row d-flex justify-content-between">
+            <div class="col-lg-7 d-flex justify-content-center">
+              <div
+                class="
+                  col-12
+                  d-flex
+                  introduction
+                  justify-content-center
+                  flex-column
+                "
+              >
+                <h1 data-aos="fade-up" data-aos-duration="1000" id="intro-text">
+                  Hey, I'm Kirubanand R.
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" id="intro-desc">
+                  A coding sophomore! I develop Web and Android apps, and also
+                  contribute to Open Source.
+                </p>
+              </div>
+            </div>
 
-			<div class="container">
-				<a class="navbar-brand nav-text-color-light">Resume</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+            <div class="col-lg-4 d-flex justify-content-center">
+              <div
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+                class="col-12 test img-fluid"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-				<div class="navbar-collapse collapse" id="nav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a href="#" class="mx-2 nav-link nav-text-color-light">About</a>
-						</li>
-						<li class="nav-item">
-							<a href="#education" class="mx-2 nav-link nav-text-color-light">Education</a>
-						</li>
-						<li class="nav-item">
-							<a href="#skills" class="mx-2 nav-link nav-text-color-light">Skills</a>
-						</li>
-						<li class="nav-item">
-							<a href="" class="mx-2 nav-link nav-text-color-light">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a href="" class="ms-2 nav-link nav-text-color-light">Connect</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-		</nav>
+      <!-- Education Section -->
+      <section id="education">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 data-aos="zoom-in" class="mt-5 heading-text-light">
+                Education
+              </h1>
+              <h1 data-aos="zoom-in" class="text-shadow-light">Academics</h1>
+            </div>
+          </div>
 
-			
-		<!-- Dark Mode Toggle Switch -->
-		<div data-aos="zoom-out" data-aos-duration="1000" class="container toggle">
-			<svg style="fill: #fff; background-color: #000; border-radius: 50%; padding: 10px; box-sizing: content-box;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
-				<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-			</svg>
-		</div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="250"
+                class="card mb-3"
+              >
+                <div class="row g-2">
+                  <div class="col-sm-4">
+                    <img
+                      src="assets/images/psgitech.jpeg"
+                      alt="psg-itech-img"
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-title">PSG iTech</h5>
+                      <div class="d-flex justify-content-between">
+                        <p class="card-text">B.E. CSE</p>
+                        <p class="card-text">2019-2023</p>
+                      </div>
+                      <p><small>CGPA: 9.62 (2nd sem)</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="250"
+                class="card mb-3"
+              >
+                <div class="row g-2">
+                  <div class="col-sm-4">
+                    <img
+                      src="assets/images/cs_academy.jpeg"
+                      alt="cs-academy-img"
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-title">CS Academy</h5>
+                      <div class="d-flex justify-content-between">
+                        <p class="card-text">Intermediate</p>
+                        <p class="card-text">2017-2019</p>
+                      </div>
+                      <p><small>Score: 95.6%</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<div class="container" id="about-content">
-			
-			<div class="row d-flex justify-content-between">
-				
-				<div class="col-lg-7 d-flex justify-content-center">
-					<div class="col-12 d-flex introduction justify-content-center flex-column">
-						<h1 data-aos="fade-up" data-aos-duration="1000" id="intro-text">Hey, I'm Kirubanand R.</h1>
-						<p data-aos="fade-up" data-aos-duration="1000" id="intro-desc">A coding sophomore! I develop Web and Android apps, and also contribute to Open Source.</p>	
-					</div>
-				</div>
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 data-aos="zoom-in" class="mt-5 heading-text-light">
+                My Skills
+              </h1>
+              <h1 data-aos="zoom-in" class="text-shadow-light">Tech Stack</h1>
+            </div>
+          </div>
 
-				<div class="col-lg-4 d-flex justify-content-center">
-					<div data-aos="zoom-out" data-aos-duration="1000" class="col-12 test img-fluid">
-						
-					</div>
-				</div>
+          <div class="row mb-5">
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo"
+                  src="https://cdn.worldvectorlogo.com/logos/c.svg"
+                  alt="c++-logo"
+                />
+                <h1 class="skill-text">C++</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-2"
+                  src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg"
+                  alt="kotlin-logo"
+                />
+                <h1 class="skill-text skill-text-2">Kotlin</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo"
+                  src="https://www.vectorlogo.zone/logos/java/java-icon.svg"
+                  alt="java-logo"
+                />
+                <h1 class="skill-text">Java</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo"
+                  src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                  alt="javascript-logo"
+                />
+                <h1 class="skill-text">JavaScript</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-1"
+                  src="https://seeklogo.com/images/H/html5-logo-EF92D240D7-seeklogo.com.png"
+                  alt="html-logo"
+                />
+                <h1 class="skill-text skill-text-1">HTML</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-1"
+                  src="https://seeklogo.com/images/C/css3-logo-FD8D698B77-seeklogo.com.png"
+                  alt="css-logo"
+                />
+                <h1 class="skill-text skill-text-1">CSS</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo"
+                  src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg"
+                  alt="bootstrap-logo"
+                />
+                <h1 class="skill-text">Bootstrap</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo"
+                  src="https://cdn.worldvectorlogo.com/logos/git-icon.svg"
+                  alt="git-logo"
+                />
+                <h1 class="skill-text">Git</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-2"
+                  src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png"
+                  alt="github-logo"
+                />
+                <h1 class="skill-text skill-text-2">GitHub</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-3"
+                  src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+                  alt="node-logo"
+                />
+                <h1 class="skill-text skill-text-3">Node</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-3"
+                  src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+                  alt="react-logo"
+                />
+                <h1 class="skill-text skill-text-3">React</h1>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
+              <div class="skill-box skill-box-light col-12">
+                <img
+                  class="skill-logo-2"
+                  src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
+                  alt="mongodb-logo"
+                />
+                <h1 class="skill-text skill-text-2">MongoDB</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			</div>
+    <!-- AOS Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-		</div>
-		
-	</section>
-
-
-	<!-- Education Section -->
-	<section id="education">
-		
-		<div class="container">
-			
-			<div class="row">
-				
-				<div class="col">
-					<h1 data-aos="zoom-in" class="mt-5 heading-text-light">Education</h1>
-					<h1 data-aos="zoom-in" class="text-shadow-light">Academics</h1>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-				
-				<div class="col-lg-6">
-					<div data-aos="fade-right" data-aos-offset="250" class="card mb-3">
-				<div class="row g-2">
-				    <div class="col-sm-4">
-				    	<img src="assets/images/psgitech.jpeg" alt="psg-itech-img">
-				    </div>
-				    <div class="col-sm-8">
-				    	<div class="card-body">
-				    		<h5 class="card-title">PSG iTech</h5>
-				    		<div class="d-flex justify-content-between">
-					        	<p class="card-text">B.E. CSE</p>
-					        	<p class="card-text">2019-2023</p>
-				    		</div>
-				        	<p><small>CGPA: 9.62 (2nd sem)</small></p>
-				      	</div>
-				    </div>
-				</div>
-			</div>
-				</div>
-				<div class="col-lg-6">
-					<div data-aos="fade-right" data-aos-offset="250" class="card mb-3">
-					<div class="row g-2">
-					    <div class="col-sm-4">
-					    	<img src="assets/images/cs_academy.jpeg" alt="cs-academy-img">
-					    </div>
-					    <div class="col-sm-8">
-					    	<div class="card-body">
-					    		<h5 class="card-title">CS Academy</h5>
-					    		<div class="d-flex justify-content-between">
-						        	<p class="card-text">Intermediate</p>
-						        	<p class="card-text">2017-2019</p>
-					    		</div>
-						        	<p><small>Score: 95.6%</small></p>
-						      	</div>
-						    </div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-
-
-	</section>
-
-	<!-- Skills Section -->
-	<section id="skills">
-		
-		<div class="container">
-			
-			<div class="row">
-				
-				<div class="col">
-					
-					<h1 data-aos="zoom-in" class="mt-5 heading-text-light">My Skills</h1>
-					<h1 data-aos="zoom-in" class="text-shadow-light">Tech Stack</h1>
-
-				</div>
-
-			</div>
-
-			<div class="row mb-5">
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/c.svg" alt="c++-logo">
-						<h1 class="skill-text">C++</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-2" src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin-logo">
-						<h1 class="skill-text skill-text-2">Kotlin</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo" src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="java-logo">
-						<h1 class="skill-text">Java</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="javascript-logo">
-						<h1 class="skill-text">JavaScript</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-1" src="https://seeklogo.com/images/H/html5-logo-EF92D240D7-seeklogo.com.png" alt="html-logo">
-						<h1 class="skill-text skill-text-1">HTML</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-1" src="https://seeklogo.com/images/C/css3-logo-FD8D698B77-seeklogo.com.png" alt="css-logo">
-						<h1 class="skill-text skill-text-1">CSS</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="bootstrap-logo">
-						<h1 class="skill-text">Bootstrap</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="git-logo">
-						<h1 class="skill-text">Git</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-2" src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="github-logo">
-						<h1 class="skill-text skill-text-2">GitHub</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-3" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="node-logo">
-						<h1 class="skill-text skill-text-3">Node</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-3" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react-logo">
-						<h1 class="skill-text skill-text-3">React</h1>
-					</div>
-				</div>
-				<div data-aos="zoom-in" class="col-xl-3 col-lg-4 col-sm-6">
-					<div class="skill-box skill-box-light col-12">
-						<img class="skill-logo-2" src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="mongodb-logo">
-						<h1 class="skill-text skill-text-2">MongoDB</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-	</section>
-
-	<!-- AOS Scripts -->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-	<!-- JS Scripts -->
-	<script src="js/index.js"></script>
-
-</body>
+    <!-- JS Scripts -->
+    <script src="js/index.js"></script>
+  </body>
 </html>

@@ -1,3 +1,9 @@
+// AOS Init
+AOS.init({
+	offset: 110,
+	duration: 800,
+});
+
 var skillsContainer = document.getElementsByClassName("skill-box");
 var body = document.querySelector("body");
 var navbarBG = document.getElementsByClassName("nav-bg-color-light")[0];

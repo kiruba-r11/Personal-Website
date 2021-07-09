@@ -43,7 +43,6 @@
 }
 
 .nav-bg-color-light {
-	transition: 0.5s;
 	background-color: var(--light-primary) !important;
 }
 
@@ -52,7 +51,6 @@
 }
 
 .nav-text-color-light {
-	transition: 0.5s;
 	color: var(--light-text-nav) !important;
 }
 
@@ -105,7 +103,6 @@
 }
 
 .heading-text-light {
-	transition: 0.5s;
 	font-weight: 300;
 	font-size: 3rem;
 }
@@ -152,7 +149,6 @@
 }
 
 .text-shadow-light {
-	transition: 0.5s;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: 700;
@@ -219,11 +215,9 @@
 
 .skill-box-dark:hover {
 	background-color: var(--dark-card-hover);
-	transition: 1s;
 }
 
 .skill-box-light:hover {
-	transition: 1s;
 	background-color: var(--light-card-hover);
 }
 
